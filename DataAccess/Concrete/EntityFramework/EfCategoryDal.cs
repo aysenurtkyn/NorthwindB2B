@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concreate.EntityFramework
 {
-    public class EfCategoryDal : EfEntityReBase<Category, NortwindContext>, ICategoryDal
+    public class EfCategoryDal : EfEntityReBase<Category, NorthwindContext>, ICategoryDal
     {
         public List<CategoryDetailDTO> GetCategoryDetails()
         {
-          using(NortwindContext context = new NortwindContext())
+          using(NorthwindContext context = new NorthwindContext())
             {
                 var result = from c in context.Categories
                              select new CategoryDetailDTO

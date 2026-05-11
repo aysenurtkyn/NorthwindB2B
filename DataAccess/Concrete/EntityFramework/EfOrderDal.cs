@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concreate.EntityFramework
 {
-    public class EfOrderDal : EfEntityReBase<Order, NortwindContext>, IOrderDal
+    public class EfOrderDal : EfEntityReBase<Order, NorthwindContext>, IOrderDal
     {
         public List<OrderDetailDTO> GetOrderDetails()
         {
-            using(NortwindContext context = new NortwindContext())
+            using(NorthwindContext context = new NorthwindContext())
             {
                 var result = from O in context.Orders
                              select new OrderDetailDTO

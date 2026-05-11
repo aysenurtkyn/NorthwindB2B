@@ -21,6 +21,15 @@ namespace Business.Constants
         public static string InvalidData = "Böyle bir ürün bulunamadı !";
         public static string OrderDeleted = "Sipariş silindi!";
         public static string OrderUpdated = "Sipariş güncellendi !";
+        public static string ErrorCountofCategory = "Bu kategory en fazla on ürün alabilir !";
+        public static string ProductNameAlreadyExist = "Bu ürün adı kullanılıyor !";
+        public static string CategoryCountLimitedIsNotRight = "Kategory limiti aşıldığı için ürün eklenemez !";
+        public static string AuthorizationDenied = "Yetkilendirme reddedildi!";
+        public static string UserRegistered = "Kayıt olundu!";
+        public static string UserNotFound = "Kullanıcı bulunamadı!";
+        public static string PasswordError = "Parola hatası!";
+        public static string SuccessfulLogin = "Giriş yapıldı!";
+        public static string UserAlreadyExist = "Kullanıcı mevcut!";
 
 
     }
